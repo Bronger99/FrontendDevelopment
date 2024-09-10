@@ -36,15 +36,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  https://www.denijverheid.org
+  www.freshcotton.com
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Homepage  
-  <img src="readme-images/dummy-plaatje1" width="375px" alt="Homepage">
+  <img src="readme-images/dummy-plaatje1.jpg" width="375px" alt="Homepage">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Praktisch  
-  <img src="readme-images/dummy-plaatje2" width="375px" alt="Praktische Informatie">
+  <img src="readme-images/dummy-plaatje2.jpg" width="375px" alt="Productpagina">
  
 </details>
 
@@ -57,6 +57,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+    <img src="readme-images/bevindingen.toegankelijkheid.jpg" width="375px" alt="bevindingen toegankelijkheid">
 
 </details>
 
