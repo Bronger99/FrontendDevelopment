@@ -1,0 +1,40 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* kleur */
+	--color-text:#111;
+	--color-text2: #6e6c69;
+
+	--color-background:#eee;
+	--color-background2: #dbd4be;
+	--color-background3: #c3c3c3;
+
+	/* font */
+	--font-p: 'Inter', sans-serif;
+  	--font-h1: 'Inter', sans-serif;
+  	--font-h2: 'Inter', sans-serif;
+}
+
+
+
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* jouw code */
+
