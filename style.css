@@ -1,40 +1,227 @@
-/**************/
-/* CSS REMEDY */
-/**************/
 *, *::after, *::before {
   box-sizing:border-box;  
 }
-
-
-
-
-
 
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
+	color-scheme:light dark;
+
 	/* kleur */
-	--color-text:#111;
+	--color-text: light-dark(#111, #eee);
 	--color-text2: #6e6c69;
 
-	--color-background:#eee;
-	--color-background2: #dbd4be;
+	--color-background:light-dark(#fff, #111);
+	--color-background2:light-dark(#F0EEE6, rgb(30, 30, 60));
 	--color-background3: #c3c3c3;
 
 	/* font */
 	--font-p: 'Inter', sans-serif;
   	--font-h1: 'Inter', sans-serif;
   	--font-h2: 'Inter', sans-serif;
+	--font-nav: 'Inter', sans-serif;
+
+	--button-color: red;
+	--button-background: blue;
+
+}
+
+html:has(.toonMenu) {
+	overflow:hidden;
+}
+
+/* basic */
+
+body {
+	background-color: var(--color-background);
+	margin:0;
+	color:var(--color-text);
+}
+
+h1 {
+	color: var(--color-text);
+	font-family: var(--font-h1);
+}
+
+h2 {
+	color: var(--color-text);
+	font-family: var(--font-h2)
+}
+
+p {
+	color: var(--color-text);
+	font-family: var(--font-p);
+}
+
+a {
+	font-family: var(--font-nav);
+}
+
+/* tekstje bovenin */
+body h2:first-of-type{
+	margin: 0;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	font-size: 0.8em;
+	background-color: var(--color-background2);
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/* header----------------------------------------------------------------------------------------------------- */
+button:not(disabled) {
+	cursor:pointer;
+  }
+
+  header {
+	min-height:4em;
+	padding:0 1em;
+	background-color: var(--color-background);
+	line-height:1;
+	width: 100%;
+	display:flex;
+	/* flex-wrap: wrap; */
+	justify-content:space-between;
+	align-items:center;
+	
+	position:sticky;
+	top:0;
+  }
+
+/* hamburger open knop */
+header button:nth-of-type(1) {
+	order: -1;
+	border: none;
+	padding-right: 1em;
+	background-color: var(--color-background);
+}
+
+/* logo freshcotton */
+  header > a:nth-of-type(1) {
+	display:grid;
+	grid-template-columns:min-content min-content;
+	grid-gap:.25em;
+	margin-right: auto;
+}
+
+  header a:nth-of-type(2){
+	width:auto;
+  	height:2em;
+  }
+
+/* 3 icons in header rechts */
+/* header ul:nth-of-type(2) {
+	list-style-type: none;
+	display:flex;
+	flex-wrap: wrap;
+  	justify-content:end;
+	text-decoration: none;
+} */
+
+/* items rechtsboven */
+header ul {
+	list-style: none;
+	font-display: none;
+}
+
+header ul li {
+	display: inline;
+}
+
+header ul:nth-of-type(2) li {
+	display: grid;
+}
+
+/* zoekbalk */
+header input {
+	width: 100vw;
 }
 
 
+  nav a {
+	/* icon en tekst met gap-je naast elkaar */
+	display:flex;
+	align-items:center;
+	column-gap:.25em;
+	text-decoration: none;
+	border-bottom:solid 1px var(--menu-border);
+  }
+  
+  nav ul {
+	list-style: none;
+	padding-left: 1em;
+  }
+
+  nav ul li {
+	padding: 1em;
+  }
+
+  nav a img {
+	width:auto;
+	height:2em;
+  }
+  
+  nav a.active {
+	font-weight:bold;
+  }
+
+  nav {
+	background-color: var(--color-background);
+	padding:1em;
+	display:grid;
+	align-content:start;
+	gap:1em;
+	
+	background-image:var(--menu-gradient);
+	
+	/* JOUW CODE HIER - stap 1 */
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	
+	/* JOUW CODE HIER - stap 2 */
+	translate:-100% 0%;
+	
+	/* JOUW CODE HIER - stap 4 */
+	transition:translate .3s;
+  }
+  
+  /* als menu open is */
+  nav.toonMenu {
+	/* JOUW CODE HIER - stap 4 */
+	translate:0% 0%;
+  }
+/* carousel 1 ----------------------------------------------------------------------------------------------------- */
+
+/* lijst zelf */
+section:first-of-type ul{
+	display: flex;
+}
+
+/* li items */
+section:first-of-type ul li{
+	display:grid;
+}
+
+section:first-of-type ul li img{
+	width: 15em;
+}
+
+section:first-of-type ul li h2{
+	
+}
+
+section:first-of-type ul li p{
+	
+}
+
+section:first-of-type ul li a{
+	
+}
 
 
-
-/****************/
-/* JOUW STYLING */
-/****************/
-
-/* jouw code */
+/* carousel 2 ----------------------------------------------------------------------------------------------------- */
 
