@@ -69,7 +69,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdownschets.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
@@ -241,7 +241,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Een ander punt waardoor veel niet is gelukt is hoe een grid precies werkt. Ik snap het concept van rows en columns door de opdracht in een college maar weet niet goed hoe ik hier de formaten van aan kan passen en hoe ik bijvoorbeeld een afbeelding op maat krijg zodat deze het hele li element dekt. Ik heb hiervoor geprobeerd de afbeelding alle columns en rows te laten bedekken of de afbeelding als achtergrond in te stellen maar niks leek te werken. 
 
-  Tot slot vind ik het jammer dat ik niet ver ben gekomen. Ik heb het idee dat als ik minder vast zou lopen met de grids en flexboxen ik de website met mijn huidige kennis goed responsive zou kunnen maken. Hetzelfde geldt voor de microinteractie, die ik graag had willen maken met de knop in de carousel, en de states. Ik heb het idee dat de opdrachten per onderwerp me uiteindelijk allemaal lukten waardoor het extra frustrerend was dat dit niet in mijn eigen website is gelukt. Hier komt ook bij kijken dat de website 3 weken geleden volledig is veranderd en ik alleen nog maar een screenshot had van de eerste pagina. Hiervoor kon ik het origineel inspecteren wat goed hielp, toen dit niet meer kon merkte ik dat het proces een heel stuk trager ging.
+  Tot slot vind ik het jammer dat ik niet ver ben gekomen. Ik heb het idee dat als ik minder vast zou lopen met de grids en flexboxen ik de website met mijn huidige kennis goed responsive zou kunnen maken. Hetzelfde geldt voor de microinteractie, die ik graag had willen maken met de knop in de carousel, en de states. Ik heb het idee dat de opdrachten per onderwerp me uiteindelijk allemaal lukten waardoor het extra frustrerend was dat dit ondanks de veele uren niet in mijn eigen website is gelukt. Hier komt ook bij kijken dat de website 3 weken geleden volledig is veranderd en ik alleen nog maar een screenshot had van de eerste pagina. Hiervoor kon ik het origineel inspecteren wat goed hielp, toen dit niet meer kon merkte ik dat het proces een heel stuk trager ging.
 
 
 
