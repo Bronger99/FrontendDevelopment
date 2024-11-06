@@ -11,15 +11,17 @@
 	/* kleur */
 	--color-text: light-dark(#111, #eee);
 	--color-text2: #6e6c69;
+	--color-text3: light-dark(#eee, #111)
 
 	--color-background:light-dark(#fff, #111);
 	--color-background2:light-dark(#F0EEE6, rgb(30, 30, 60));
-	--color-background3: #c3c3c3;
+	--color-background3: #dcdcdc;
 
 	/* font */
 	--font-p: 'Inter', sans-serif;
   	--font-h1: 'Inter', sans-serif;
   	--font-h2: 'Inter', sans-serif;
+	--font-h3: 'inter', sans-serif;
 	--font-nav: 'Inter', sans-serif;
 
 	--button-color: red;
@@ -40,8 +42,7 @@ body {
 }
 
 h1 {
-	color: var(--color-text);
-	font-family: var(--font-h1);
+	visibility: hidden;
 }
 
 h2 {
@@ -59,7 +60,7 @@ a {
 }
 
 /* tekstje bovenin */
-body h2:first-of-type{
+body h2:nth-of-type(1){
 	margin: 0;
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
@@ -173,8 +174,6 @@ header input {
 	align-content:start;
 	gap:1em;
 	
-	background-image:var(--menu-gradient);
-	
 	/* JOUW CODE HIER - stap 1 */
 	position:fixed;
 	left:0;
@@ -194,34 +193,136 @@ header input {
 	/* JOUW CODE HIER - stap 4 */
 	translate:0% 0%;
   }
+
+  input[type="text"] {
+    font-family: var(--font-p);
+	background-color: var(--color-background3);
+	border: none;
+	padding: 0.75em;
+	color: var(--color-text2);
+	
+}
 /* carousel 1 ----------------------------------------------------------------------------------------------------- */
 
 /* lijst zelf */
 section:first-of-type ul{
 	display: flex;
+	padding-left: none;
+	overflow-x:auto;
+	scroll-snap-type: x mandatory;
+	overscroll-behavior: contain auto;
 }
 
 /* li items */
 section:first-of-type ul li{
 	display:grid;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+	padding-right: 1em;
+	/* position:relative; */
 }
 
 section:first-of-type ul li img{
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 4;
+	display: inline;
+	/* max-width: 100%; */
 	width: 15em;
+  	height:30em;
+  	object-fit:cover;
+ 	/* display:block; */
+	/* position: absolute; */
 }
 
 section:first-of-type ul li h2{
-	
+	/* grid-row-start: 2; */
+  	/* align-self:end; */
+	color: var(--color-text3);
+	position: absolute;
 }
 
 section:first-of-type ul li p{
-	
+	/* grid-row-start: 3;
+	grid-column-start: 1;
+	grid-column-end: 2; */
+	position:absolute;
+	color: var(--color-text3);
+	max-width: 100%;
+
 }
 
 section:first-of-type ul li a{
-	
+	/* grid-row-start: 4; */
+	position:absolute;
 }
 
 
 /* carousel 2 ----------------------------------------------------------------------------------------------------- */
+section:nth-of-type(2){
+	background-color: var(--color-background2);
+	padding-left: 1em;
+}
 
+section:nth-of-type(2) h2{
+	font-size: 1.5em;
+	text-align: left;
+	padding: 0;
+	padding-top: 4em;
+}
+
+section:nth-of-type(2) ul{
+	width: 100%;
+	display: flex;
+	gap: 1em;
+	overflow-x:auto;
+	scroll-snap-type: x mandatory;
+	overscroll-behavior: contain auto;
+	padding-left: 0;
+}
+
+section:nth-of-type(2) ul li h3{
+	list-style-type: none;
+	font-family: var(--font-h3);
+	font-size: 0.75em;
+	text-decoration: none;
+	list-style: none;
+}
+
+section:nth-of-type(2) ul li{
+	position:relative;
+	display: grid;
+	/* grid-template-columns: 2em 2em 2em;
+	grid-template-rows: 2em 5em 5em; */
+	/* grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr; */
+}
+
+/* logo's */
+section:nth-of-type(2) ul li ul{
+	display: flex;
+}
+
+/* tekstje */
+section:nth-of-type(2) ul li p{
+	background-color: var(--color-background2);
+	color: var(--color-text2);
+}
+
+/* afbeelding */
+section:nth-of-type(2) ul li img{
+	width: 100%;
+	display:block;
+  	height:auto;
+	object-fit:cover;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 2;
+}
+
+section:nth-of-type(2) ul li button{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 2;
+}
