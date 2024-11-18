@@ -209,7 +209,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   <img src="readme-images/ss.pagina2" width="375px" alt="top">
-  <img src="readme-images/ss.carousel3.png" width="375px" alt="top">
+  <img src="readme-images/ss.carousel2.png" width="375px" alt="top">
   <img src="readme-images/ss.carousel3.png" width="375px" alt="bummer">
 </details>
 
