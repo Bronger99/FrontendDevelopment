@@ -208,7 +208,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Tot slot heb ik veel tijd gestoken in iets onderzoeken wat ik graag wilde toevoegen. Ik wilde onder de header een border die alles wat daarachter stond zou 'inverten'. Ik heb meerdere dingen geprobeerd waaronder mix-blend-mode: difference; wat ik in een random youtube video vond maar het lukte alleen om de volledige header te inverten wat wel heel onleesbaar zou worden. Achteraf had ik een <p> element toe kunnen voegen aan de header en die op een eigen rij kunnen zetten in de flexbox (of misschien grid van maken). Als ik deze een kleur zou geven en 0 padding en margin zou het denk ik lukken. 
 
 
-  <img src="readme-images/ss.pagina2" width="375px" alt="top">
+  <img src="readme-images/ss.pagina2.png" width="375px" alt="top">
   <img src="readme-images/ss.carousel2.png" width="375px" alt="top">
   <img src="readme-images/ss.carousel3.png" width="375px" alt="bummer">
 </details>
