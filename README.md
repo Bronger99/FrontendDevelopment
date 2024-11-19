@@ -196,6 +196,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken voor eindgesprek</summary>
 
+  BELANGRIJK! de tweede pagina is te zien door in de derde carousel op accessoires te klikken
+
   ### Je uitkomst - karakteristiek screenshots:
 
 
