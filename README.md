@@ -196,7 +196,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken voor eindgesprek</summary>
 
-  BELANGRIJK! de tweede pagina is te zien door in de eerste carousel op li item 1 shop now te klikken en vervolgens in de derde carousel op accessoires te klikken. 
+  BELANGRIJK! De tweede pagina is te zien door in de 3e carousel op accessoires te klikken.
 
   ### Je uitkomst - karakteristiek screenshots:
 
